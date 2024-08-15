@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', e => {
       return_date,
       currency,
     });
-
-    console.log(locations.lastSearch);
     ticketsUI.renderTickets(locations.lastSearch);
   }
   console.log('hi')

@@ -39,4 +39,5 @@ document.addEventListener('DOMContentLoaded', e => {
     console.log(locations.lastSearch);
     ticketsUI.renderTickets(locations.lastSearch);
   }
+  console.log('hi')
 });

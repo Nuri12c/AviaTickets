@@ -28,11 +28,12 @@ class Locations {
   }
 
   getCityCodeByKey(key) {
-    const city = Object.values(this.cities).find(
-      item => item.full_name === key,
-    );
-    return city.code;
+  const city = Object.values(this.cities).find(item => item.full_name === key);
+  if (!city) {
+    throw new Error(`City with full name "${key}" not found.`);
   }
+  return city.code;
+}
 
   getCityNameByCode(code) {
     return this.cities[code].name;

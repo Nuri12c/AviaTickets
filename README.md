@@ -1,1 +1,1 @@
-https://nuri12c.github.io/creeti/
+https://nuri12c.github.io/AviaTickets/
